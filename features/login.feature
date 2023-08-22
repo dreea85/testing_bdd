@@ -12,7 +12,7 @@ Feature: Test the login module
   @param
   Scenario: Test unregistrered email for "No customer account found" when the user tries to log in with an unregistred email
     Given I am on the login page
-    When I introduce "ceva@gmail.com" in the email field
+    When I introduce 'ceva@gmail.com' in the email field
     And I introduce the password
     And I click on the login button
     Then the main error message is displayed

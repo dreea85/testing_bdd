@@ -8,13 +8,11 @@ def step_impl(context):
 
 @when("I introduce an unregistred email in the email field")
 def step_impl(context):
-    context.login_page.set_email()
-
+    # context.login_page.set_email()
+    context.login_page.set_email('ceva@gmail.com')
 @when("I introduce '{email}' in the email field")
 def step_impl(context, email):
     context.login_page.set_email(email)
-
-
 
 @when("I introduce the password")
 def step_impl(context):
